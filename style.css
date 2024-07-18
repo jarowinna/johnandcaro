@@ -6,12 +6,17 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+    text-align: center;
 }
 
 header {
-    background-color: #ffcccb;
-    padding: 20px;
     text-align: center;
+    padding: 20px;
+    background-image: url('flower_ceiling.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    color: white;
 }
 
 header h1 {
