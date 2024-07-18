@@ -1,49 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caroline & Fiancé's Wedding</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>John and Caroline</h1>
+        <p>Sunday, April 6th, 2025</p>
+    </header>
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
-    <meta http-equiv="Pragma" content="no-cache"/>
-    <meta http-equiv="Expires" content="0"/>
-    <title>Caroline Win | UX &amp; Interaction Designer</title>
-    <!-- <head profile="http://www.w3.org/2005/10/profile"> -->
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Assistant:300,400,700|Montserrat:300,400,400i,500,500i,600,600i,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-    <!-- <link rel="icon" type="image/png" href="https://wincaroline.github.io/favicon.png"> -->
-  </head>
+    <section id="welcome">
+        <h2>Welcome</h2>
+        <p>We are so excited to share our special day with you. Please join us as we embark on this new journey together.</p>
+    </section>
 
-  <body>
-    <div class="introcontainer">
-      <header></header>
-      <div class="introtext">
-        <h1 class="hello">Hello! My name is <span class="superlogo">Caroline Win</span>.</h1>
-        <p class="hellosubheader">I'm a user experience designer currently based in Los Angeles, California.</p>
-        <hr>
-      </div>
-    </div>
+    <section id="details">
+        <h2>Event Details</h2>
+        <p>Date: August 20, 2024</p>
+        <p>Time: 4:00 PM</p>
+        <p>Location: Beautiful Garden, City, State</p>
+    </section>
 
-    <div class="grayBackground">
-      <div class="projectcontainerwide">
-        <h2 class="homepreheader" style="font-size: 18px; text-align: center; font-weight: 300; margin-bottom: 24px;">SELECTED WORK</h2>
-        <div class="selectedProjectGroup">
-        </div>
-      </div>
-    </div>
+    <section id="rsvp">
+        <h2>RSVP</h2>
+        <form action="submit_rsvp.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="attendance">Will you be attending?</label>
+            <select id="attendance" name="attendance" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 
-    <footer></footer>
-
-    <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/common.js"></script>
-    <script src="js/index.js"></script>
-
-  </body>
-
+    <footer>
+        <p>&copy; 2024 Caroline & Fiancé. All rights reserved.</p>
+    </footer>
+</body>
 </html>
