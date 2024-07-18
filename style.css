@@ -17,6 +17,7 @@ header {
     background-size: cover;
     background-position: top;
     color: white;
+    font-family: 'Averia Sans Serif', Arial, sans-serif;
 }
 
 header h1 {
@@ -36,6 +37,7 @@ section {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Averia Sans Serif', Arial, sans-serif;
 }
 
 section h2 {
@@ -48,36 +50,6 @@ section p {
     line-height: 1.6;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-form label {
-    margin-top: 10px;
-    font-size: 1.1em;
-}
-
-form input, form select, form button {
-    padding: 10px;
-    margin-top: 5px;
-    font-size: 1em;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-}
-
-form button {
-    background-color: #ff6f61;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    margin-top: 15px;
-}
-
-form button:hover {
-    background-color: #ff3b2f;
-}
-
 footer {
     text-align: center;
     padding: 10px;
@@ -85,6 +57,7 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
+    font-family: 'Averia Sans Serif', Arial, sans-serif;
 }
 
 footer p {
