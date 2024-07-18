@@ -6,21 +6,19 @@ body {
     padding: 0;
     text-align: center;
     font-family: 'Averia Serif', Arial, sans-serif;
-
-}
-
-header {
+    height: 100%;
+    min-height: 100vh;
     background-image: url('flower_ceiling.png'); 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    height: 240px;
+
 }
 
 section {
     text-align: center;
-    padding: 20px;
-    margin: 20px;
+    padding: 8px;
+    margin: 8px;
 }
 
 .title {
@@ -34,6 +32,16 @@ footer {
     width: 100%;
     margin-top: 100px;
     padding-bottom: 16px;
+}
+
+.centered-text {
+    height: 100%; /* Ensure the full height of the page is used */
+    margin: 0; /* Remove default margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    width: 100%;
 }
 
 h1 {
