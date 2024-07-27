@@ -18,6 +18,7 @@ body {
     height: auto;
     margin-bottom: 40px;
     overflow-x: hidden;
+    object-fit: contain;
 }
 
 section {
@@ -75,7 +76,8 @@ nav {
 }
 
 .yellow {
-    background-color: #F6F5F2;
+    /* background-color: #F6F5F2; */
+    background-color: white;
     padding-top: 60px;
     padding-bottom: 60px;
     width: 80%;
