@@ -11,6 +11,7 @@ body {
     align-items: center; /* Centers content vertically */
     justify-content: center; /* Centers content horizontally */
     overflow-x: hidden;
+    width: 100%;
 }
 
 .ceiling {
