@@ -16,10 +16,8 @@ body {
 
 .ceiling {
     width: 100%;
-    height: auto;
-    margin-bottom: 40px;
-    overflow-x: hidden;
-    object-fit: contain;
+    overflow: clip;
+    margin-bottom: 60px;
 }
 
 section {
