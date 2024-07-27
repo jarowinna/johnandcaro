@@ -6,12 +6,6 @@ body {
     padding: 0;
     text-align: center;
     font-family: 'Averia Serif', Arial, sans-serif;
-    height: 100%;
-    min-height: 100vh;
-    background-image: url('flower_ceiling.png'); 
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: top;
     display: flex;
     flex-direction: column;
     align-items: center; /* Centers content vertically */
@@ -19,43 +13,83 @@ body {
 
 }
 
+.ceiling {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+}
 
 section {
     text-align: center;
-    padding: 8px;
-    margin: 8px;
 }
 
 
 .centered-text {
-margin: 0; /* Remove default margin */
+    margin: 0; /* Remove default margin */
     height: 100%; /* Ensure the full height of the page is used */
     width: 100%;
-}
-
-.title {
-    display: flex;        /* Enables Flexbox layout */
-    justify-content: center; /* Centers the items horizontally */
-    align-items: center;  /* Aligns the items vertically */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers content vertically */
 }
 
 footer {
     text-align: center;
     width: 100%;
-    margin-top: 100px;
-    padding-bottom: 16px;
+    margin-top: 60px;
+    padding-bottom: 60px;
 }
 
+.space60 {
+    height: 60px;
+}
 
+.space24 {
+    height: 24px;
+}
+
+nav {
+    padding: 10px 20px;
+}
+
+.navbar {
+    list-style-type: none;
+    text-align: center;
+}
+
+.navbar li {
+    display: inline-block; /* Display items in a row */
+    margin-right: 60px; /* Space between items */
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #1474AE; /* Change color on hover */
+}
+
+.yellow {
+    background-color: #F6F5F2;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    width: 80%;
+    max-width: 800px;
+    border-radius: 8px;
+
+}
 
 h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 48px;
     color: #333;
     font-family: "Averia Serif Libre", "Gowun Batang", serif;
     font-weight: 300;
     font-style: normal;
-    margin-bottom: 24px;
 }
 
 h2 {
@@ -65,26 +99,80 @@ h2 {
     font-style: normal;
 }
 
-.script {
-    font-family: 'Euphoria Script', cursive;
-    font-weight: 400;
-    font-style: normal;
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-p {
-    font-size: 1.2em;
+h3 {
+    font-size: 1.6em;
     font-family: "Averia Serif Libre", "Gowun Batang", serif;
     font-weight: 300;
     font-style: normal;
+}
+
+.script {
+    font-family: 'WindSong', cursive;
+    font-weight: 400;
+    font-style: normal;
+    padding-left: 16px;
+    padding-right: 20px;
+}
+
+.kr-script {
+    font-family: "Nanum Brush Script";
+    font-size: 60px;
+}
+
+p {
+    font-size: 16px;
+    font-family: "Averia Serif Libre", "Gowun Batang", serif;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 0.5;
+}
+
+i {
+    font-size: 1.2em;
+    font-family: "Averia Serif Libre", "Gowun Batang", serif;
+    font-weight: 300;
+    font-style: italic;
     line-height: 0.5;
 }
 
 a {
-    font-size: 1.2em;
+    font-size: 1em;
     font-family: "Averia Serif Libre", "Gowun Batang", serif;
     font-weight: 300;
     font-style: normal;
     line-height: 0.5;
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.eyebrow {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-bottom: 8px;
+}
+
+.kr {
+    font-family: "Gowun-Batang";
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 1080px) {
+    .ceiling {
+        height: 200px;
+        width: auto;
+    }
+
+    h1 {
+        font-size: 2.4em;
+    }
+
+    .navbar li {
+        display: block; /* Stack items under each other on small screens */
+        margin: 10px 0;
+    }
 }
