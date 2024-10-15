@@ -254,4 +254,8 @@ a:hover {
         height:75px;
         width:auto;
     }
+
+    .photo {
+        display: inline;
+    }
 }
