@@ -225,6 +225,6 @@ a:hover {
 
     .navbar li {
         display: block; /* Stack items under each other on small screens */
-        margin: 10px 0;
+        margin: 16px 0;
     }
 }
