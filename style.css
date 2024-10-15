@@ -209,6 +209,23 @@ a:hover {
     font-size: 20px;
 }
 
+.circlepic {
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+}
+
+.circleicon {
+    height:140px;
+    width:auto;
+    rotate:-15deg;
+    vertical-align: middle;
+}
+
 @media only screen and (max-width: 1440px) {
     .ceiling {
         height: 200px;
@@ -226,5 +243,15 @@ a:hover {
     .navbar li {
         display: block; /* Stack items under each other on small screens */
         margin: 16px 0;
+    }
+
+    .circlepic {
+        width:120px;
+        height:120px;
+    }
+
+    .circleicon {
+        height:75px;
+        width:auto;
     }
 }
