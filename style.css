@@ -1,5 +1,20 @@
 /* styles.css */
 
+@font-face {
+    font-family: 'Script';
+    src: url(/fonts/GreatVibes-Regular.ttf) format('truetype'),
+    url(/fonts/Melody.otf) format('opentype');
+    
+    font-weight: normal;
+    font-style: normal;
+}
+
+.script {
+    font-family: 'Script', cursive;
+    padding-left: 16px;
+    padding-right: 20px;
+}
+
 body {
     background-color: #ffffff;
     margin: 0;
@@ -20,10 +35,22 @@ body {
     margin-bottom: 60px;
 }
 
-section {
+section.wide {
     text-align: center;
+    max-width: 1200px;
+    width: 100%;
+    margin-left: 72px;
+    margin-right: 72px;
 }
 
+section.narrow {
+    text-align: center;
+    max-width: 600px;
+}
+
+.photo {
+    display: flex;
+}
 
 .centered-text {
     margin: 0; /* Remove default margin */
@@ -41,6 +68,11 @@ footer {
     padding-bottom: 60px;
 }
 
+.space100 {
+    height: 100px;
+}
+
+
 .space60 {
     height: 60px;
 }
@@ -49,14 +81,21 @@ footer {
     height: 24px;
 }
 
+
+
+
 nav {
     padding: 10px 20px;
 }
 
+
+
 .navbar {
     list-style-type: none;
     text-align: center;
+    padding-left: 0px;
 }
+
 
 .navbar li {
     display: inline-block; /* Display items in a row */
@@ -70,8 +109,14 @@ nav {
     transition: color 0.3s;
 }
 
+a.selected {
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
 .navbar a:hover {
-    color: #1474AE; /* Change color on hover */
+    color: #AC165E; /* Change color on hover */
+    text-decoration: underline;
 }
 
 .yellow {
@@ -87,7 +132,7 @@ nav {
 
 h1 {
     margin: 0;
-    font-size: 48px;
+    font-size: 56px;
     color: #333;
     font-family: "Averia Serif Libre", "Gowun Batang", serif;
     font-weight: 300;
@@ -97,24 +142,24 @@ h1 {
 h2 {
     font-size: 1.8em;
     font-family: "Averia Serif Libre", "Gowun Batang", serif;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
 }
 
 h3 {
-    font-size: 1.6em;
+    font-size: 1.4em;
+    font-family: "Averia Serif Libre", "Gowun Batang", serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+h4 {
+    font-size: 1.2em;
     font-family: "Averia Serif Libre", "Gowun Batang", serif;
     font-weight: 300;
     font-style: normal;
 }
 
-.script {
-    font-family: 'WindSong', cursive;
-    font-weight: 400;
-    font-style: normal;
-    padding-left: 16px;
-    padding-right: 20px;
-}
 
 .kr-script {
     font-family: "Nanum Brush Script";
@@ -126,7 +171,7 @@ p {
     font-family: "Averia Serif Libre", "Gowun Batang", serif;
     font-weight: 300;
     font-style: normal;
-    line-height: 0.5;
+    margin: 0 0 4px 0;
 }
 
 i {
@@ -134,7 +179,6 @@ i {
     font-family: "Averia Serif Libre", "Gowun Batang", serif;
     font-weight: 300;
     font-style: italic;
-    line-height: 0.5;
 }
 
 a {
@@ -142,14 +186,16 @@ a {
     font-family: "Averia Serif Libre", "Gowun Batang", serif;
     font-weight: 300;
     font-style: normal;
-    line-height: 0.5;
     color: black;
     text-decoration: underline;
 }
 
 a:hover {
     text-decoration: none;
+    color: #AC165E
 }
+
+
 
 .eyebrow {
     font-weight: bold;
@@ -163,11 +209,15 @@ a:hover {
     font-size: 20px;
 }
 
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1440px) {
     .ceiling {
         height: 200px;
         width: auto;
     }
+}
+
+
+@media only screen and (max-width: 1080px) {
 
     h1 {
         font-size: 2.4em;
