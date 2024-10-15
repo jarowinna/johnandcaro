@@ -33,6 +33,7 @@ body {
     width: 100%;
     overflow: clip;
     margin-bottom: 60px;
+    content:url(assets/flower_ceiling.png);
 }
 
 section.wide {
@@ -228,9 +229,7 @@ a:hover {
 
 @media only screen and (max-width: 1440px) {
     .ceiling {
-        height: 200px;
-        width: auto;
-        overflow-x:hidden;
+        content:url(assets/flower_ceiling_medium.png);
     }
 }
 
@@ -258,5 +257,12 @@ a:hover {
 
     .photo {
         display: inline;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .ceiling {
+        content:url(assets/flower_ceiling_small.png);
     }
 }
