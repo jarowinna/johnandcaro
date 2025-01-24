@@ -56,13 +56,13 @@ body {
 }
 
 .twothird {
-    width: 55%;
+    width: 60%-48px;
     
 }
 
 .onethird {
     width: 40%;
-    margin-right: 32px;
+    margin-right: 48px;
 }
 
 .centered-text {
@@ -165,6 +165,8 @@ h3 {
     font-family: "Averia Serif Libre", "Gowun Batang", serif;
     font-weight: 500;
     font-style: normal;
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 
 h4 {
