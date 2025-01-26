@@ -14,183 +14,231 @@
 <body>
     <img class="ceiling" src="assets/flower_ceiling.png">
     
+    <section class="centered-text wide"> <!--Header-->
 
-        <section> <!--Header-->
-            <h3 class="centered-text">The Wedding Of</h3>
-            <div style="height: 24px;"></div>
-            <h1 class="script">John & Caroline</h1>
-        </section>
-
-        <div class="space60"></div>
+        <h3 class="centered-text">The Wedding Of</h3>
+        <div style="height: 24px;"></div>
+        <h1 class="script">John & Caroline</h1>
         
-        <nav>
-            <ul class="navbar">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="itinerary.html">Itinerary</a></li>
-                <li><a href="travel.html">Travel & Lodging</a></li>
-                <li><a href="party.html" class="selected">Wedding Party</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="https://withjoy.com/johnandcaro/registry">Registry</a></li>
-                <li><a href="https://withjoy.com/johnandcaro/rsvp">RSVP</a></li>
-            </ul>
-        </nav>
-
         <div class="space60"></div>
 
-        <section class="wide centered-text">
+        <div class="countdown-container">
+            <div class="countdown">
+                <div>
+                    <p><span id="days">0</span>
+                    DAYS</p>
+                </div>
+                <span class="colon">:</span>
+                <div>
+                    <p><span id="hours">0</span>
+                    HRS</p>
+                </div>
+                <span class="colon">:</span>
+                <div>
+                    <p><span id="minutes">0</span>
+                    MINS</p>
+                </div>
+                <span class="colon">:</span>
+                <div>
+                    <p><span id="seconds">0</span>
+                    SECS</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="space60"></div>
 
-           <div style="display:flex;width:100%;"> 
+        <script src="countdown.js"></script>
 
-                <div style="width:50%;padding-left:32px;padding-right:16px;">
+        <nav>
+            <div class="dropdown-menu">
+              <select onchange="navigateToPage(this)">
+                <option value="index.html">Home</option>
+                <option value="itinerary.html">Itinerary</option>
+                <option value="travel.html">Travel & Lodging</option>
+                <option value="party.html" selected>Wedding Party</option>
+                <option value="gallery.html">Gallery</option>
+                <option value="https://withjoy.com/johnandcaro/registry">Registry</option>
+                <option value="https://withjoy.com/johnandcaro/rsvp">RSVP</option>
+              </select>
+            </div>
+            <ul class="navbar">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="itinerary.html">Itinerary</a></li>
+              <li><a href="travel.html">Travel & Lodging</a></li>
+              <li><a href="party.html" class="selected">Wedding Party</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="https://withjoy.com/johnandcaro/registry">Registry</a></li>
+              <li><a href="https://withjoy.com/johnandcaro/rsvp">RSVP</a></li>
+            </ul>
+          </nav>
 
+          <script>
+            function navigateToPage(select) {
+            const selectedValue = select.value;
+            window.location.href = selectedValue;
+            }
+          </script>
+
+        <div class="space24"></div>
+
+    </section>
+        
+
+    <section class="wide centered-text">
+
+        <div style="display:flex;width:100%;"> 
+
+            <div style="width:50%;padding-left:32px;padding-right:16px;">
+
+                <div>
+                    <div><img src="assets/pic_jessi.JPG" class="circlepic"></div>
                     <div>
-                        <div><img src="assets/pic_jessi.JPG" class="circlepic"></div>
-                        <div>
-                            <h3>Jessica Win</h3>
-                            <h4>Matron of Honor</h4>
-                        </div>
+                        <h3>Jessica Win</h3>
+                        <h4>Matron of Honor</h4>
                     </div>
-
-                    <div class="space60"></div>
-
-                    <div class="photo-left">
-                        <div><img src="assets/pic_luxi2.jpeg" class="circlepic"></div>
-                        <div>
-                            <h3>Luxi Chen</h3>
-                            <h4>Bridesmaid</h4>
-                        </div>
-                    </div>
-
-                    <div class="space60"></div>
-
-                    <div>
-                        <div><img src="assets/pic_sarah.png" class="circlepic"></div>
-                        <div>
-                            <h3>Sarah Underwood</h3>
-                            <h4>Bridesmaid</h4>
-                        </div>
-                    </div>
-
-                    <div class="space60"></div>
-
-                    <div>
-                        <div><img src="assets/pic_jessie.JPG" class="circlepic"></div>
-                        <div>
-                            <h3>Jessica Lord</h3>
-                            <h4>Bridesmaid</h4>
-                        </div>
-                    </div>
-
-                    
-
-                    <div class="space60"></div>
-
-                    <div>
-                        <div><img src="assets/pic_julie.JPG" class="circlepic"></div>
-                        <div>
-                            <h3>Julie Yamashiro</h3>
-                            <h4>Bridesmaid</h4>
-                        </div>
-                    </div>
-
-                    <div class="space60"></div>
-
-                    <div>
-                        <div>
-                            <div class="circlepic" style="background-color:#F3E4EC;margin:auto;"><img class="circleicon" src="assets/cosmos-1.png"></div>
-                            <h3>Luna</h3>
-                            <h4>Flower Girl</h4>
-                        </div>
-                    </div>
-
-                    <div class="space60"></div>
-
-                    <div>
-                        <div><img src="assets/pic_petey.png" class="circlepic"></div>
-                        <div class="space24"></div>
-                        <div>
-                            <h3>Petey</h3>
-                            <h4>Best Dog</h4>
-                            <p>(won't actually be attending)</p>
-                        </div>
-                    </div>
-            
-
                 </div>
 
-                <div style="width:50%;padding-left:16px;padding-right:32px;">
+                <div class="space60"></div>
 
+                <div class="photo-left">
+                    <div><img src="assets/pic_luxi2.jpeg" class="circlepic"></div>
                     <div>
-                        <!-- <div><img src="assets/pic_peter.jpg" style="width:200px;border-radius:50%;"></div> -->
-                        <div class="circlepic" style="background-color:#D5E5E0;margin:auto;"><img class="circleicon" src="assets/leaf-5.png"></div>
-                        <div>
-                            <h3>Peter Na</h3>
-                            <h4>Best Man</h4>
-                        </div>
+                        <h3>Luxi Chen</h3>
+                        <h4>Bridesmaid</h4>
                     </div>
+                </div>
 
-                    <div class="space60"></div>
+                <div class="space60"></div>
 
+                <div>
+                    <div><img src="assets/pic_sarah.png" class="circlepic"></div>
                     <div>
-                        <div><img src="assets/pic_jonathan2.jpeg" class="circlepic"></div>
-                        <div>
-                            <h3>Jonathan Rieck</h3>
-                            <h4>Groomsman</h4>
-                        </div>
+                        <h3>Sarah Underwood</h3>
+                        <h4>Bridesmaid</h4>
                     </div>
+                </div>
 
-                    <div class="space60"></div>
+                <div class="space60"></div>
 
-                    <div style="width:100%;">
-                        <div><img src="assets/pic_alex.png" class="circlepic"></div>
-                        <div>
-                            <h3>Alex Trassare</h3>
-                            <h4>Groomsman</h4>
-                        </div>
-                    </div>
-
-                    <div class="space60"></div>
-
+                <div>
+                    <div><img src="assets/pic_jessie.JPG" class="circlepic"></div>
                     <div>
-                        <div><img src="assets/pic_justin.JPG" class="circlepic"></div>
-                        <div>
-                            <h3>Justin Deye</h3>
-                            <h4>Groomsman</h4>
-                        </div>
+                        <h3>Jessica Lord</h3>
+                        <h4>Bridesmaid</h4>
                     </div>
+                </div>
 
-                    <div class="space60"></div>
+                
 
+                <div class="space60"></div>
+
+                <div>
+                    <div><img src="assets/pic_julie.JPG" class="circlepic"></div>
                     <div>
-                        <!-- <div style="width:200px;border-radius:50%;background-color:gray;"></div> -->
-                        <div class="circlepic" style="background-color:#ECEEDD;margin:auto;"><img class="circleicon" src="assets/leaf-14.png"></div>
-                        <div>
-                            <h3>A.K.</h3>
-                            <h4>Groomsman</h4>
-                        </div>
+                        <h3>Julie Yamashiro</h3>
+                        <h4>Bridesmaid</h4>
                     </div>
+                </div>
 
-                    <div class="space60"></div>
+                <div class="space60"></div>
 
+                <div>
                     <div>
-                        <div>
-                            <div class="circlepic" style="background-color:#E0ECF0;margin:auto;"><img class="circleicon" src="assets/cosmos-1a.png"></div>
-                            <h3>Connor</h3>
-                            <h4>Ring Bearer</h4>
-                        </div>
+                        <div class="circlepic" style="background-color:#F3E4EC;margin:auto;"><img class="circleicon" src="assets/cosmos-1.png"></div>
+                        <h3>Luna</h3>
+                        <h4>Flower Girl</h4>
                     </div>
+                </div>
 
-                    <div class="space60"></div>
+                <div class="space60"></div>
 
+                <div>
+                    <div><img src="assets/pic_petey.png" class="circlepic"></div>
+                    <div class="space24"></div>
                     <div>
-                        <div>
-                            <div class="circlepic" style="background-color:#DEF3F4;margin:auto;"><img class="circleicon" src="assets/orchid-3a.png"></div>
-                            <h3>Joseph</h3>
-                            <h4>Ring Bearer</h4>
-                        </div>
+                        <h3>Petey</h3>
+                        <h4>Best Dog</h4>
+                        <p>(won't actually be attending)</p>
                     </div>
+                </div>
+        
 
-                    
+            </div>
+
+            <div style="width:50%;padding-left:16px;padding-right:32px;">
+
+                <div>
+                    <!-- <div><img src="assets/pic_peter.jpg" style="width:200px;border-radius:50%;"></div> -->
+                    <div class="circlepic" style="background-color:#D5E5E0;margin:auto;"><img class="circleicon" src="assets/leaf-5.png"></div>
+                    <div>
+                        <h3>Peter Na</h3>
+                        <h4>Best Man</h4>
+                    </div>
+                </div>
+
+                <div class="space60"></div>
+
+                <div>
+                    <div><img src="assets/pic_jonathan2.jpeg" class="circlepic"></div>
+                    <div>
+                        <h3>Jonathan Rieck</h3>
+                        <h4>Groomsman</h4>
+                    </div>
+                </div>
+
+                <div class="space60"></div>
+
+                <div style="width:100%;">
+                    <div><img src="assets/pic_alex.png" class="circlepic"></div>
+                    <div>
+                        <h3>Alex Trassare</h3>
+                        <h4>Groomsman</h4>
+                    </div>
+                </div>
+
+                <div class="space60"></div>
+
+                <div>
+                    <div><img src="assets/pic_justin.JPG" class="circlepic"></div>
+                    <div>
+                        <h3>Justin Deye</h3>
+                        <h4>Groomsman</h4>
+                    </div>
+                </div>
+
+                <div class="space60"></div>
+
+                <div>
+                    <!-- <div style="width:200px;border-radius:50%;background-color:gray;"></div> -->
+                    <div class="circlepic" style="background-color:#ECEEDD;margin:auto;"><img class="circleicon" src="assets/leaf-14.png"></div>
+                    <div>
+                        <h3>A.K.</h3>
+                        <h4>Groomsman</h4>
+                    </div>
+                </div>
+
+                <div class="space60"></div>
+
+                <div>
+                    <div>
+                        <div class="circlepic" style="background-color:#E0ECF0;margin:auto;"><img class="circleicon" src="assets/cosmos-1a.png"></div>
+                        <h3>Connor</h3>
+                        <h4>Ring Bearer</h4>
+                    </div>
+                </div>
+
+                <div class="space60"></div>
+
+                <div>
+                    <div>
+                        <div class="circlepic" style="background-color:#DEF3F4;margin:auto;"><img class="circleicon" src="assets/orchid-3a.png"></div>
+                        <h3>Joseph</h3>
+                        <h4>Ring Bearer</h4>
+                    </div>
+                </div>
+
+                
 
                 </div>
 

@@ -14,16 +14,54 @@
 <body>
     <img class="ceiling" src="assets/flower_ceiling.png">
     
-        <section> <!--Header-->
+        <section class="centered-text wide"> <!--Header-->
             <h3 class="centered-text">The Wedding Of</h3>
             <div style="height: 24px;"></div>
             <h1 class="script">John & Caroline</h1>
-        </section>
 
-        <div class="space60"></div>
-        
-        <nav>
-            <ul class="navbar">
+            <div class="space60"></div>
+
+            <div class="countdown-container">
+                <div class="countdown">
+                    <div>
+                        <p><span id="days">0</span>
+                        DAYS</p>
+                    </div>
+                    <span class="colon">:</span>
+                    <div>
+                        <p><span id="hours">0</span>
+                        HRS</p>
+                    </div>
+                    <span class="colon">:</span>
+                    <div>
+                        <p><span id="minutes">0</span>
+                        MINS</p>
+                    </div>
+                    <span class="colon">:</span>
+                    <div>
+                        <p><span id="seconds">0</span>
+                        SECS</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="space60"></div>
+
+            <script src="countdown.js"></script>
+
+            <nav>
+                <div class="dropdown-menu">
+                <select onchange="navigateToPage(this)">
+                    <option value="index.html" >Home</option>
+                    <option value="itinerary.html" selected>Itinerary</option>
+                    <option value="travel.html">Travel & Lodging</option>
+                    <option value="party.html">Wedding Party</option>
+                    <option value="gallery.html">Gallery</option>
+                    <option value="https://withjoy.com/johnandcaro/registry">Registry</option>
+                    <option value="https://withjoy.com/johnandcaro/rsvp">RSVP</option>
+                </select>
+                </div>
+                <ul class="navbar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="itinerary.html" class="selected">Itinerary</a></li>
                 <li><a href="travel.html">Travel & Lodging</a></li>
@@ -31,10 +69,18 @@
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="https://withjoy.com/johnandcaro/registry">Registry</a></li>
                 <li><a href="https://withjoy.com/johnandcaro/rsvp">RSVP</a></li>
-            </ul>
-        </nav>
+                </ul>
+            </nav>
 
-        <div class="space60"></div>
+            <script>
+                function navigateToPage(select) {
+                const selectedValue = select.value;
+                window.location.href = selectedValue;
+                }
+            </script>
+
+            <div class="space60"></div>
+        </section>
 
         <section class="wide">
             <h2>Sunday, April 6th, 2025</h2>

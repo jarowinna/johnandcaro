@@ -10,10 +10,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=WindSong:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_drop_down" />
 </head>
 <body>
     <img class="ceiling" style="overflow-x:hidden;">
-
 
     <section class="centered-text wide"> <!--Header-->
 
@@ -23,17 +24,63 @@
         
         <div class="space60"></div>
 
+        <div class="countdown-container">
+            <div class="countdown">
+                <div>
+                    <p><span id="days">0</span>
+                    DAYS</p>
+                </div>
+                <span class="colon">:</span>
+                <div>
+                    <p><span id="hours">0</span>
+                    HRS</p>
+                </div>
+                <span class="colon">:</span>
+                <div>
+                    <p><span id="minutes">0</span>
+                    MINS</p>
+                </div>
+                <span class="colon">:</span>
+                <div>
+                    <p><span id="seconds">0</span>
+                    SECS</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="space60"></div>
+
+        <script src="countdown.js"></script>
+
         <nav>
+            <div class="dropdown-menu">
+              <select onchange="navigateToPage(this)">
+                <option value="index.html" selected>Home</option>
+                <option value="itinerary.html">Itinerary</option>
+                <option value="travel.html">Travel & Lodging</option>
+                <option value="party.html">Wedding Party</option>
+                <option value="gallery.html">Gallery</option>
+                <option value="https://withjoy.com/johnandcaro/registry">Registry</option>
+                <option value="https://withjoy.com/johnandcaro/rsvp">RSVP</option>
+              </select>
+            </div>
             <ul class="navbar">
-                <li><a href="index.html" class="selected">Home</a></li>
-                <li><a href="itinerary.html">Itinerary</a></li>
-                <li><a href="travel.html">Travel & Lodging</a></li>
-                <li><a href="party.html">Wedding Party</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="https://withjoy.com/johnandcaro/registry">Registry</a></li>
-                <li><a href="https://withjoy.com/johnandcaro/rsvp">RSVP</a></li>
+              <li><a href="index.html" class="selected">Home</a></li>
+              <li><a href="itinerary.html">Itinerary</a></li>
+              <li><a href="travel.html">Travel & Lodging</a></li>
+              <li><a href="party.html">Wedding Party</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="https://withjoy.com/johnandcaro/registry">Registry</a></li>
+              <li><a href="https://withjoy.com/johnandcaro/rsvp">RSVP</a></li>
             </ul>
-        </nav>
+          </nav>
+
+          <script>
+            function navigateToPage(select) {
+            const selectedValue = select.value;
+            window.location.href = selectedValue;
+            }
+          </script>
 
         <div class="space24"></div>
 
@@ -43,6 +90,7 @@
 
     <section class="centered-text narrow" style="max-width:400px;width:80%;">
         <div class="space60"></div>
+
         <h2>Location</h2>
         <p><a href="https://maps.app.goo.gl/fg6o7pvg8JXTdDMe8">Bella Collina San Clemente</a></p>
         <p>200 Avenida La Pata</p>
